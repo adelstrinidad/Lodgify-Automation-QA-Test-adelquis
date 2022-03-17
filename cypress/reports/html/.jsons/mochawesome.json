@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-17T13:48:20.656Z",
+    "end": "2022-03-17T13:48:29.834Z",
+    "duration": 9178,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c333b0ad-482f-461e-84c9-6a635b216457",
+      "title": "",
+      "fullFile": "cypress/integration/pricing.test.js",
+      "file": "cypress/integration/pricing.test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e1a80471-6ac2-4b1c-88dd-9307282265f8",
+          "title": "Lodgify Pricing page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify pricing plan for yearly subscription",
+              "fullTitle": "Lodgify Pricing page Verify pricing plan for yearly subscription",
+              "timedOut": null,
+              "duration": 9116,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "//On \"Lodgify Pricing\" page, add a test to verify that the \"Yearly\" plan selecting 50 rentals displays: \n//$64 for Starter plan $375 for Professional plan $525 for Ultimate plan\ncy.get(\"#scroll-prop-plan\").clear().type(50); // Validate Starter price plan\ncy.getPricingValue('2', '64'); // Validate Professional price plan\ncy.getPricingValue('1', '375'); // Validate Ultimate price plan\n// TODO This test reports a bug. Expected result 518\ncy.getPricingValue('3', '525');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<span.total-sum>' to have text '525', but the text was '518'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<span.total-sum>' to have text '525', but the text was '518'\n    at Context.eval (http://localhost:3000/__cypress/tests?p=cypress/support/index.js:161:87)",
+                "diff": "- '518'\n+ '525'\n"
+              },
+              "uuid": "281631d5-a0cb-4554-83ff-09d581d995d7",
+              "parentUUID": "e1a80471-6ac2-4b1c-88dd-9307282265f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "281631d5-a0cb-4554-83ff-09d581d995d7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9116,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports/html/.jsons"
+      },
+      "version": "6.1.1"
+    }
+  }
+}
