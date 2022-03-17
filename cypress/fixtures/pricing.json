@@ -1,0 +1,7 @@
+{
+  "planPrice": ".plan-price-",
+  "pricingValue": ".total-sum",
+  "currencySelect":".price-currency-select",
+  "currencySymbolPost":".currency-symbol-post",
+  "currencySymbolPre":".currency-symbol-pre"
+}
