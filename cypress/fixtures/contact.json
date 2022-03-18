@@ -1,0 +1,9 @@
+{
+    "name": "[name=\"name\"]",
+    "phone": "[name=\"phone\"]",
+    "email": "[name=\"email\"]",
+    "comment": "[placeholder=\"Comment\"]",
+    "datePicker": ".DateRangePickerInput__withBorder",
+    "guests": "[placeholder=\"Guests\"]",
+    "send": "[type=\"submit\"]"
+}

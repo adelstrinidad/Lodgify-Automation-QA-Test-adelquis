@@ -1,4 +1,6 @@
 {
+  "scrollPropPlan":"#scroll-prop-plan",
+  "minSliderHandle":".min-slider-handle",
   "planPrice": ".plan-price-",
   "pricingValue": ".total-sum",
   "currencySelect":".price-currency-select",

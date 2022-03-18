@@ -1,15 +1,20 @@
 /// <reference types="Cypress" />
 
 context('Lodgify Pricing page', () => {
+  let pricingElements = {};
   beforeEach(() => {
     cy.visit('/pricing.html');
+    
+    cy.fixture('pricing').then((elements) => {
+      pricingElements = elements;
+    })
   })
 
   it('Verify pricing plan for yearly subscription', () => {
     //On "Lodgify Pricing" page, add a test to verify that the "Yearly" plan selecting 50 rentals displays: 
     //$64 for Starter plan $375 for Professional plan $525 for Ultimate plan
 
-    cy.get("#scroll-prop-plan").clear().type(50)
+    cy.get(pricingElements.scrollPropPlan).clear().type(50)
     // Validate Starter price plan
     cy.getPricingValue('2', '64')
     // Validate Professional price plan
@@ -17,6 +22,7 @@ context('Lodgify Pricing page', () => {
     // Validate Ultimate price plan
     // TODO This test reports a bug. Expected result 518
     cy.getPricingValue('3', '525')
+
 
 
   });
@@ -71,13 +77,14 @@ context('Lodgify Pricing page', () => {
     })
   });
 
-  xit('Verify change price period is allowed', () => {
+  it('Verify functionality of slider handle', () => {
+      const arrayRentals = [1,35, 50, 75, 100];
+      arrayRentals.forEach(rental => {
+        cy.get(pricingElements.scrollPropPlan).clear().type(rental).invoke('attr', 'data-slider-value', '');
+        cy.get(pricingElements.minSliderHandle).invoke('attr', 'aria-valuenow').should('eq',rental.toString())
+      });
 
   });
-  xit('Verify faq', () => {
-
-  });
-
 
 
 })

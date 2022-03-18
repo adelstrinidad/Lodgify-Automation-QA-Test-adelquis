@@ -1,3 +1,58 @@
+# Lodgify automation challenge
+![cypress version](https://img.shields.io/badge/cypress-9.0.0-brightgreen)
+
+
+## Requirements
+
+- Any computer: Mac, Windows, Linux
+- [Node 12.0.0+ (LTS)](https://nodejs.org/)
+- [git](https://git-scm.com)
+
+In order to get the code and install dependencies
+
+```bash
+git clone https://github.com/adelstrinidad/Lodgify-Automation-QA-Test-adelquis
+npm install
+```
+## Running tests 🐛
+### Opening Cypress GUI
+
+```bash
+# open Cypress GUI
+npm run cy:open
+```
+
+### Running from the CLI
+
+
+```bash
+
+# run Cypress tests headlessly
+npm cy:run
+```
+
+## Reporting
+Mochawesome reporter is a custom reporter which generates a standalone HTML/CSS report to help visualize your test runs. It has simple, clean, and modern design. The report has filters to display only the tests you want and shows stack trace for failed tests.
+
+For get the report just run `npm cy:run` and a html file report will be generated on 'cypress/reports/html'
+
+To inspect the report, go to:
+```cypress/reports/html/index.html```
+## Additional information 🗃
+
+- https://www.cypress.io/
+- https://docs.cypress.io/
+- https://docs.cypress.io/api/api/table-of-contents.html
+
+[ci-badge]: https://circleci.com/gh/cypress-io/testing-workshop-cypress.svg?style=svg
+[ci-url]: https://circleci.com/gh/cypress-io/testing-workshop-cypress
+[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
+[renovate-app]: https://renovateapp.com/
+
+
+
+# Challenge details
+
 Open LodgifyHTML as a project to get started
 
 The following instructions use Bash, so make sure to install Git Bash before running the commands.
