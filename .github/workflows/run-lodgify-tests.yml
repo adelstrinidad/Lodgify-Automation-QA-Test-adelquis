@@ -1,11 +1,12 @@
 name: lodgify-ci
 on:
   push:
-    branches: [ $default-branch ]
+    branches:
+      - main
   pull_request:
-    branches: [ $default-branch ]
+    branches:
+      - main
 jobs:
-
   ubuntu-18:
     runs-on: ubuntu-18.04
     steps:
