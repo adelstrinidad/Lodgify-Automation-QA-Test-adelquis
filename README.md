@@ -1,3 +1,72 @@
+# Lodgify automation challenge
+![cypress version](https://img.shields.io/badge/cypress-9.0.0-brightgreen)
+
+
+## Requirements
+
+- Any computer: Mac, Windows, Linux
+- [Node 12.0.0+ (LTS)](https://nodejs.org/)
+- [git](https://git-scm.com)
+
+In order to get the code and install dependencies
+
+```bash
+git clone https://github.com/adelstrinidad/Lodgify-Automation-QA-Test-adelquis
+npm run install-all
+```
+
+Start the server running this:
+```
+$ npm run dev-server
+
+Note: Ther server will run on port 3000
+```
+## Running tests 🐛
+### Opening Cypress GUI
+
+```bash
+# open Cypress GUI
+npm run cy:open
+```
+
+### Running from the CLI
+
+
+```bash
+
+# run Cypress tests headlessly
+npm cy:run
+```
+
+## Reporting
+Mochawesome reporter is a custom reporter which generates a standalone HTML/CSS report to help visualize your test runs. It has simple, clean, and modern design. The report has filters to display only the tests you want and shows stack trace for failed tests.
+
+For get the report just run `npm cy:run` and a html file report will be generated on 'cypress/reports/html'
+
+To inspect the report, go to:
+```cypress/reports/html/index.html```
+## Additional information 🗃
+
+- https://www.cypress.io/
+- https://docs.cypress.io/
+- https://docs.cypress.io/api/api/table-of-contents.html
+
+## NOTES
+### Patterns:
+I decided to implement two different kinds of patterns in this project. For Pricing tests, I applied the "command" pattern as the official documentation recommends (see https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/),  it will allow easy maintainability of the test suites, and for Contact tests, the most common one in automation "Page Object Pattern.
+
+## CI-CD
+For continuous integration Github actions has been implemented, it will run each time a pull request or a merged to `main` branch is produced. To check the build status:
+``` 
+Go to Actions tab on github project and inspect
+```
+For more innformation, please visit https://docs.github.com/es/actions
+
+
+
+
+# Challenge details
+
 Open LodgifyHTML as a project to get started
 
 The following instructions use Bash, so make sure to install Git Bash before running the commands.

@@ -1,1 +1,7 @@
-{}
+{
+    "baseUrl": "http://localhost:3000/",
+    "reporter": "cypress-mochawesome-reporter",
+    "viewportHeight": 1536,
+    "viewportWidth": 960,
+    "chromeWebSecurity": false
+}
