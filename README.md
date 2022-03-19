@@ -12,7 +12,14 @@ In order to get the code and install dependencies
 
 ```bash
 git clone https://github.com/adelstrinidad/Lodgify-Automation-QA-Test-adelquis
-npm install
+npm run install-all
+```
+
+Start the server running this:
+```
+$ npm run dev-server
+
+Note: Ther server will run on port 3000
 ```
 ## Running tests 🐛
 ### Opening Cypress GUI
