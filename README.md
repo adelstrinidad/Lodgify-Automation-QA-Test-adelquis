@@ -45,7 +45,7 @@ To inspect the report, go to:
 - https://docs.cypress.io/api/api/table-of-contents.html
 
 ## NOTES
-### Paterns:
+### Patterns:
 I decided to implement two different kinds of patterns in this project. For Pricing tests, I applied the "command" pattern as the official documentation recommends (see https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/),  it will allow easy maintainability of the test suites, and for Contact tests, the most common one in automation "Page Object Pattern.
 
 
