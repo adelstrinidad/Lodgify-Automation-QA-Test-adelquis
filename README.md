@@ -44,10 +44,10 @@ To inspect the report, go to:
 - https://docs.cypress.io/
 - https://docs.cypress.io/api/api/table-of-contents.html
 
-[ci-badge]: https://circleci.com/gh/cypress-io/testing-workshop-cypress.svg?style=svg
-[ci-url]: https://circleci.com/gh/cypress-io/testing-workshop-cypress
-[renovate-badge]: https://img.shields.io/badge/renovate-app-blue.svg
-[renovate-app]: https://renovateapp.com/
+## NOTES
+### Paterns:
+I decided to implement two different kinds of patterns in this project. For Pricing tests, I applied the "command" pattern as the official documentation recommends (see https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/),  it will allow easy maintainability of the test suites, and for Contact tests, the most common one in automation "Page Object Pattern.
+
 
 
 
