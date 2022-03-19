@@ -12,8 +12,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        
+      - name: Install newman
+        run: |
+          run install-all
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
           start: npm run dev-server
+      
