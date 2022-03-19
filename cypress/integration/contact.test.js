@@ -3,7 +3,7 @@
 const { faker } = require('@faker-js/faker');
 import ContactPage from "../support/pageObjects/ContactPage"
 
-context('Lodgify Pricing page', () => {
+context('Lodgify Contact page', () => {
     beforeEach(() => {
         cy.visit('/contact.html'); 
     })

@@ -55,6 +55,13 @@ To inspect the report, go to:
 ### Patterns:
 I decided to implement two different kinds of patterns in this project. For Pricing tests, I applied the "command" pattern as the official documentation recommends (see https://www.cypress.io/blog/2019/01/03/stop-using-page-objects-and-start-using-app-actions/),  it will allow easy maintainability of the test suites, and for Contact tests, the most common one in automation "Page Object Pattern.
 
+## CI-CD
+For continuous integration Github actions has been implemented, it will run each time a pull request or a merged to `main` branch is produced. To check the build status:
+``` 
+Go to Actions tab on github project and inspect
+```
+For more innformation, please visit https://docs.github.com/es/actions
+
 
 
 
